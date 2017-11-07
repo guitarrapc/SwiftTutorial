@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  FoodTracker
 //
-//  Created by 吉崎 生 on 2017/11/01.
-//  Copyright © 2017年 Grani, Inc. All rights reserved.
+//  Created by guitarrapc on 2017/11/01.
+//  Copyright © 2017年 guitarrapc All rights reserved.
 //
 
 import UIKit
