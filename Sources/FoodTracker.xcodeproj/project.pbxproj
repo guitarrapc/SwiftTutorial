@@ -103,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0860AD721FA9F4E00009953C /* Build configuration list for PBXNativeTarget "FoodTracker" */;
 			buildPhases = (
+				08503BCA1FB1F22D00ED9427 /* SwiftLint */,
 				0860AD511FA9F4E00009953C /* Sources */,
 				0860AD521FA9F4E00009953C /* Frameworks */,
 				0860AD531FA9F4E00009953C /* Resources */,
@@ -193,6 +194,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08503BCA1FB1F22D00ED9427 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n#swiftlint autocorrect\n    swiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0860AD511FA9F4E00009953C /* Sources */ = {
