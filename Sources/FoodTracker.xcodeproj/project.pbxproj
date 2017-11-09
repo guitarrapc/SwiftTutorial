@@ -14,6 +14,7 @@
 		0860AD631FA9F4E00009953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860AD611FA9F4E00009953C /* LaunchScreen.storyboard */; };
 		0860AD6E1FA9F4E00009953C /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860AD6D1FA9F4E00009953C /* FoodTrackerTests.swift */; };
 		089AF37A1FB2E5DB00A66BF0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AF3791FB2E5DB00A66BF0 /* RatingControl.swift */; };
+		08F1B9861FB428B600F2DED9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1B9851FB428B600F2DED9 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0860AD6D1FA9F4E00009953C /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		0860AD6F1FA9F4E00009953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		089AF3791FB2E5DB00A66BF0 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		08F1B9851FB428B600F2DED9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,14 @@
 		0860AD571FA9F4E00009953C /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0860AD641FA9F4E00009953C /* Info.plist */,
 				0860AD581FA9F4E00009953C /* AppDelegate.swift */,
+				08F1B9851FB428B600F2DED9 /* Meal.swift */,
+				089AF3791FB2E5DB00A66BF0 /* RatingControl.swift */,
 				0860AD5A1FA9F4E00009953C /* ViewController.swift */,
-				0860AD5C1FA9F4E00009953C /* Main.storyboard */,
 				0860AD5F1FA9F4E00009953C /* Assets.xcassets */,
 				0860AD611FA9F4E00009953C /* LaunchScreen.storyboard */,
-				0860AD641FA9F4E00009953C /* Info.plist */,
-				089AF3791FB2E5DB00A66BF0 /* RatingControl.swift */,
+				0860AD5C1FA9F4E00009953C /* Main.storyboard */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -146,7 +149,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "Grani, Inc.";
+				ORGANIZATIONNAME = guitarrapc;
 				TargetAttributes = {
 					0860AD541FA9F4E00009953C = {
 						CreatedOnToolsVersion = 9.1;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F1B9861FB428B600F2DED9 /* Meal.swift in Sources */,
 				0860AD5B1FA9F4E00009953C /* ViewController.swift in Sources */,
 				089AF37A1FB2E5DB00A66BF0 /* RatingControl.swift in Sources */,
 				0860AD591FA9F4E00009953C /* AppDelegate.swift in Sources */,
@@ -380,7 +384,7 @@
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.grani.swift.tutorial01.iyoshizaki.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.grani.swift.tutorial01.guitarrapc.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,7 +400,7 @@
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.grani.swift.tutorial01.iyoshizaki.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.grani.swift.tutorial01.guitarrapc.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

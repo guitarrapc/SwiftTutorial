@@ -3,7 +3,7 @@
 //  FoodTracker
 //
 //  Created by guitarrapc on 2017/11/08.
-//  Copyright © 2017年 Grani, Inc. All rights reserved.
+//  Copyright © 2017年 guitarrapc All rights reserved.
 //
 
 import UIKit
