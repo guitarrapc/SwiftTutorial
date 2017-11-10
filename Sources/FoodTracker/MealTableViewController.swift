@@ -13,6 +13,18 @@ class MealTableViewController: UITableViewController {
     // MARK : Properties
     var meals = [Meal]()
 
+    // MARK: Actions
+
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue){
+        if let souceViewController = sender.souceViewController as? MealViewController, let meal = souceViewController.meal {
+            // Add a new meal.
+            let newIndexPath = IndexPath(row:meals.count, section:0)
+
+            meals.append(meal)
+            talbeView.inserRows(at: [newIndexPath], width: .automatic)
+        }
+    }
+
     // MARK : Private Methods
     private func loadSampleMeals(){
         let photo1 = UIImage(named: "meal1")
