@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class MealTableViewController: UITableViewController {
 
@@ -16,12 +17,13 @@ class MealTableViewController: UITableViewController {
     // MARK: Actions
 
     @IBAction func unwindToMealList(sender: UIStoryboardSegue){
-        if let souceViewController = sender.souceViewController as? MealViewController, let meal = souceViewController.meal {
+        if let souceViewController = sender.source as? MealViewController, let meal = souceViewController.meal {
+
             // Add a new meal.
             let newIndexPath = IndexPath(row:meals.count, section:0)
 
             meals.append(meal)
-            talbeView.inserRows(at: [newIndexPath], width: .automatic)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
 
