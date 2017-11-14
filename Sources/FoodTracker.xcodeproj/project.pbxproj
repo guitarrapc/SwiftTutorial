@@ -150,8 +150,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0860AD721FA9F4E00009953C /* Build configuration list for PBXNativeTarget "FoodTracker" */;
 			buildPhases = (
-				08CF39D81FBB154600D303CD /* XcodeVersionCheck */,
 				A405634D077BDFED3B7BCE20 /* [CP] Check Pods Manifest.lock */,
+				08CF39D81FBB154600D303CD /* XcodeVersionCheck */,
 				08CF39D51FBAFC0900D303CD /* R.swift */,
 				08503BCA1FB1F22D00ED9427 /* SwiftLint */,
 				0860AD511FA9F4E00009953C /* Sources */,
@@ -263,7 +263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\n    swiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n#swiftlint autocorrect\n    swiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		08CF39D51FBAFC0900D303CD /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -1,15 +1,25 @@
 PODS:
+  - MobileCenter (0.14.1):
+    - MobileCenter/Analytics (= 0.14.1)
+    - MobileCenter/Crashes (= 0.14.1)
+  - MobileCenter/Analytics (0.14.1):
+    - MobileCenter/Core
+  - MobileCenter/Core (0.14.1)
+  - MobileCenter/Crashes (0.14.1):
+    - MobileCenter/Core
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
 
 DEPENDENCIES:
+  - MobileCenter
   - R.swift
 
 SPEC CHECKSUMS:
+  MobileCenter: b37e20008a5a306fb04c21bd34747858f93dda68
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: f0e8dc67fc4165195cd5e7cdff4950cdda3b39c9
+PODFILE CHECKSUM: 7b7e4dfcb154762f2c0e5e85471ecd0ebfe323cd
 
 COCOAPODS: 1.1.1

@@ -13,5 +13,6 @@ target 'FoodTracker' do
   end
 
   pod 'R.swift'
+  pod 'MobileCenter'
 
 end
