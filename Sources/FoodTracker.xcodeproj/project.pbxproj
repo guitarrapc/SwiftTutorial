@@ -150,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0860AD721FA9F4E00009953C /* Build configuration list for PBXNativeTarget "FoodTracker" */;
 			buildPhases = (
+				08CF39D81FBB154600D303CD /* XcodeVersionCheck */,
 				A405634D077BDFED3B7BCE20 /* [CP] Check Pods Manifest.lock */,
 				08CF39D51FBAFC0900D303CD /* R.swift */,
 				08503BCA1FB1F22D00ED9427 /* SwiftLint */,
@@ -277,6 +278,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		08CF39D81FBB154600D303CD /* XcodeVersionCheck */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = XcodeVersionCheck;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ $XCODE_VERSION_ACTUAL != \"0910\" ]]; then\necho \"Actual Xcode version is not desired. Actual: $XCODE_VERSION_ACTUAL\"\nreturn -1\nfi";
 		};
 		6FA97CB76C9A93216A882F08 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
