@@ -8,6 +8,7 @@
 
 import UIKit
 import os.log
+import Rswift
 
 class MealTableViewController: UITableViewController {
 
@@ -38,9 +39,9 @@ class MealTableViewController: UITableViewController {
 
     // MARK : Private Methods
     private func loadSampleMeals() {
-        let photo1 = UIImage(named: "meal1")
-        let photo2 = UIImage(named: "meal2")
-        let photo3 = UIImage(named: "meal3")
+        let photo1 = R.image.meal1()
+        let photo2 = R.image.meal2()
+        let photo3 = R.image.meal3()
 
         guard let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4) else {
             fatalError("Unable to instantiate meal1")

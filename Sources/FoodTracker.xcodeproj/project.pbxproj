@@ -14,6 +14,7 @@
 		0860AD631FA9F4E00009953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860AD611FA9F4E00009953C /* LaunchScreen.storyboard */; };
 		0860AD6E1FA9F4E00009953C /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860AD6D1FA9F4E00009953C /* FoodTrackerTests.swift */; };
 		089AF37A1FB2E5DB00A66BF0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AF3791FB2E5DB00A66BF0 /* RatingControl.swift */; };
+		08CF39D71FBAFC9600D303CD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CF39D61FBAFC9500D303CD /* R.generated.swift */; };
 		08F1B9861FB428B600F2DED9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1B9851FB428B600F2DED9 /* Meal.swift */; };
 		08F1B9881FB4659300F2DED9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1B9871FB4659300F2DED9 /* MealTableViewCell.swift */; };
 		08F1B98A1FB5440200F2DED9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1B9891FB5440200F2DED9 /* MealTableViewController.swift */; };
@@ -43,6 +44,7 @@
 		0860AD6D1FA9F4E00009953C /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		0860AD6F1FA9F4E00009953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		089AF3791FB2E5DB00A66BF0 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		08CF39D61FBAFC9500D303CD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		08F1B9851FB428B600F2DED9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		08F1B9871FB4659300F2DED9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		08F1B9891FB5440200F2DED9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		0860AD571FA9F4E00009953C /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				08CF39D61FBAFC9500D303CD /* R.generated.swift */,
 				0860AD641FA9F4E00009953C /* Info.plist */,
 				0860AD581FA9F4E00009953C /* AppDelegate.swift */,
 				08F1B9851FB428B600F2DED9 /* Meal.swift */,
@@ -148,6 +151,7 @@
 			buildConfigurationList = 0860AD721FA9F4E00009953C /* Build configuration list for PBXNativeTarget "FoodTracker" */;
 			buildPhases = (
 				A405634D077BDFED3B7BCE20 /* [CP] Check Pods Manifest.lock */,
+				08CF39D51FBAFC0900D303CD /* R.swift */,
 				08503BCA1FB1F22D00ED9427 /* SwiftLint */,
 				0860AD511FA9F4E00009953C /* Sources */,
 				0860AD521FA9F4E00009953C /* Frameworks */,
@@ -260,6 +264,20 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect\n    swiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		08CF39D51FBAFC0900D303CD /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		6FA97CB76C9A93216A882F08 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08F1B9861FB428B600F2DED9 /* Meal.swift in Sources */,
+				08CF39D71FBAFC9600D303CD /* R.generated.swift in Sources */,
 				0860AD5B1FA9F4E00009953C /* MealViewController.swift in Sources */,
 				089AF37A1FB2E5DB00A66BF0 /* RatingControl.swift in Sources */,
 				0860AD591FA9F4E00009953C /* AppDelegate.swift in Sources */,
