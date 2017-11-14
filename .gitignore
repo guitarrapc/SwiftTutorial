@@ -105,3 +105,7 @@ Vendor/bundle
 
 # R.swift
 *.generated.swift
+
+# Build log
+profile.log
+# slowest.log
